@@ -5,32 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/input.css">
 </head>
 <body class="bg-[#232323]">
 
   <!-- heading  -->
-  <header>
-    <div class="container mx-auto">
-      <div class="navbar flex justify-center space-x-44 md:mx-48 md:justify-between items-center text-red-500">
-        <img class="w-36" src="images/Netflix_Logo_PMS.png" alt="">
-        <span class="bg-red-500 text-white py-1.5 px-4 rounded-sm">Sign In</span>
+  <header class="header-image">
+      <div class="container mx-auto">
+        <div class="navbar flex justify-center space-x-44 md:mx-48 md:justify-between items-center text-red-500">
+          <img class="w-36" src="images/Netflix_Logo_PMS.png" alt="">
+          <span class="bg-red-500 text-white py-1.5 px-4 rounded-sm">Sign In</span>
+        </div>
       </div>
+    <div class="container max-auto md:flex-col md:ml-40  text-white pt-48">
+        <div class="head-text ">
+          <div class="text-center text-5xl font-bold pb-4">Unlimited movies, TV shows, and more</div>
+          <div class="text-center pb-4 ">Watch anywhere. Cancel anytime.</div>
+          <div class="text-center pb-4">Ready to watch? Enter your email to create or  restart your membership.</div>
+        </div> 
+
+        <!-- input and button  -->
+
+        <div class=" flex flex-col gap-3 justify-center items-center md:justify-center md:flex-row ">
+          <input class="py-3 px-2 pr-16 border border-l type=" style="background-color: rgba(0, 0, 0, .4);" text" placeholder="Email address">
+          <button class="py-2 px-2 rounded-md hover:bg-red-700 bg-red-600 text-2xl ">Get Started <span class="text-3xl">&#62;</span>  </button>
+        </div>
     </div>
-   <div class="container max-auto text-white pt-48">
-      <div class="head-text ">
-        <div class="text-center text-3xl pb-4">Unlimited movies, TV shows, <br> and more</div>
-        <div class="text-center pb-4 text-lg">Watch anywhere. Cancel anytime.</div>
-        <div class="text-center text-lg">Ready to watch? Enter your email to create or <br> restart your membership.</div>
-      </div> 
-
-      <!-- input and button  -->
-
-      <div class=" flex flex-col gap-3 justify-center items-center md:justify-center md:flex-row ">
-        <input class="py-3 px-2 pr-16 border border-l type=" style="background-color: rgba(0, 0, 0, .4);" text" placeholder="Email address">
-        <button class="py-2 px-2 rounded-md hover:bg-red-700 bg-red-600 text-2xl ">Get Started <span class="text-3xl">&#62;</span>  </button>
-      </div>
-   </div>
-        
+          
   </header>
 <!-- heading end  -->
 
